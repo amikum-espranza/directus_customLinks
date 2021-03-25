@@ -12,25 +12,29 @@
     <h1>Saving Platform</h1>
     <p>User Credencials : id:user@espranza.in, password:user123</p>
     <p>BASE_URL = http://192.168.1.247:8080/MonneySavingPlatform/</p>
+    <a href="https://v8.docs.directus.io/api/query/filter.html" target="_blank">Documentation Filter</a>
     <ul>
         <li>Access User Collection : BASE_URL/users</li>
         <li>Access Custom COllections : BASE_URL/items/bill</li>
         <li>Directus Auth : BASE_URL/auth/authenticate </li>
         <ul>
             <li>{
-            "email":"user@espranza.in",
-            "password" : "user123"
-            }</li>
+                "email":"user@espranza.in",
+                "password" : "user123"
+                }</li>
         </ul>
         <li>Check Tocken Refresh: BASE_URL/auth/refresh</li>
         <ul>
             <li>{
-            "tocken" : tocken    
-            }</li>
+                "tocken" : tocken
+                }</li>
         </ul>
         <h3>Custom Query</h3>
         <ul>
             <li>Filter by Variable : BASE_URL/items/bill?filter[variable]=value</li>
+            <li>Access Single Element: BASE_URL/items/bill?filter[id]=2&single=1</li>
+            <li>Split Linked Data: BASE_URL/items/profile?filter[id]=20&fields=*.*&single=1</li>
+
         </ul>
     </ul>
 
