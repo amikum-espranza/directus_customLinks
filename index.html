@@ -1,46 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savings Platform</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
 
-<body>
-    <h1>Saving Platform</h1>
-    <p>User Credencials : id:user@espranza.in, password:user123</p>
-    <p>BASE_URL = http://192.168.1.247:8080/MonneySavingPlatform/</p>
-    <a href="https://v8.docs.directus.io/api/query/filter.html" target="_blank">Documentation Filter</a>
-    <ul>
-        <li>Access User Collection : BASE_URL/users</li>
-        <li>Access Custom COllections : BASE_URL/items/bill</li>
-        <li>Directus Auth : BASE_URL/auth/authenticate </li>
-        <ul>
-            <li>{
-                "email":"user@espranza.in",
-                "password" : "user123"
-                }</li>
-        </ul>
-        <li>Check Tocken Refresh: BASE_URL/auth/refresh</li>
-        <ul>
-            <li>{
-                "token" : token
-                }</li>
-        </ul>
-       
-    </ul>
-    <h3>Custom Query</h3>
-    <ul>
-        <li>Filter by Variable : BASE_URL/items/bill?filter[variable]=value</li>
-        <li>Access Single Element: BASE_URL/items/bill?filter[id]=2&single=1</li>
-        <li>Split Linked Data: BASE_URL/items/profile?filter[id]=20&fields=*.*&single=1</li>
-    </ul>
-    <h3>API'S</h3>
-    <ul>
-        <li>add here</li>
-    </ul>
-</body>
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
+  <body class="bg-light">
+    <div class="row">
+      <div class="col-md-4 col-12"></div>
+      <div class="col-md-4 col-12">
+        <div>
+          <h1>Saving Platform</h1>
+          <p>
+            User Credencials :
+            <span class="font-weight-bold text-primary"
+              >id:user@espranza.in, password:user123</span
+            >
+          </p>
+          <p class="text-danger">
+            BASE_URL = http://192.168.1.247:8080/MonneySavingPlatform/
+          </p>
+          <a
+            href="https://v8.docs.directus.io/api/query/filter.html"
+            target="_blank"
+            >Directus 8 Documentation link -></a
+          >
+          <h3>Base Urls</h3>
+          <ul>
+            <li>Access User Collection : BASE_URL/users</li>
+            <li>Access Custom COllections : BASE_URL/items/bill</li>
+            <li>Directus Auth : BASE_URL/auth/authenticate</li>
+            <ul>
+              <li>{ "email":"user@espranza.in", "password" : "user123" }</li>
+            </ul>
+            <li>Check Tocken Refresh: BASE_URL/auth/refresh</li>
+            <ul>
+              <li>{ "token" : token }</li>
+            </ul>
+          </ul>
+          <h3>Custom Query</h3>
+          <ul>
+            <li>
+              Filter by Variable :
+              <span class="text-danger h5"
+                >BASE_URL/items/bill?filter[variable]=value</span
+              >
+            </li>
+            <li>
+              Access Single Element:
+              <span class="text-danger h5">
+                BASE_URL/items/bill?filter[id]=2&single=1</span
+              >
+            </li>
+            <li>
+              Split Linked Data:
+              <span class="text-danger h5"
+                >BASE_URL/items/profile?filter[id]=20&fields=*.*&single=1</span
+              >
+            </li>
+          </ul>
+          <h3>API'S</h3>
+          <ul>
+            <li>
+              Title of API:
+              <span class="text-danger h5">API LINK</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 col-12"></div>
+    </div>
+  </body>
 </html>
