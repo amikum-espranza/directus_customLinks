@@ -142,14 +142,22 @@
                 </tr>
 
                 <tr>
-                    <td>base_url/items/avatar?fields=*.*</td>
+                    <td>base_url/items/avatar?fields=avatar_pic.*</td>
                     <td>
                         get avatar list
                     </td>
                     <td>NA</td>
                     <td>NA</td>
                 </tr>
-
+                
+                <tr>
+                    <td>http://localhost:8/users/2</td>
+                    <td>set avatar for user [patch request]</td>
+                    <td>{
+                        "avatar": "5"
+                     }</td>
+                     <td>NA</td>
+                </tr>
                 
 
             </tbody>
