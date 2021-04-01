@@ -80,10 +80,46 @@
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td>BASE_URL/users</td>
+                    <td>Access User Collection</td>
+                    <td>NA</td>
+                    <td>ALL DIRECTUS USER DATA</td>
+                </tr>
+                <tr>
+                    <td>BASE_URL/items/collection_name</td>
+                    <td>Access Custom Collections</td>
+                    <td>NA</td>
+                    <td>ALL Collection DATA</td>
+                </tr>
+                <tr>
+                    <td>BASE_URL/auth/authenticate</td>
+                    <td>Directus Auth</td>
+                    <td>{
+                        "email":"user@espranza.in",
+                        "password" : "user123"
+                        }</td>
+                    <td>{
+                        {tocken: xyz},
+                        {data:xyz}
+                        }</td>
+                </tr>
+                <tr>
+                    <td>BASE_URL/items/bill?filter[variable]=value</td>
+                    <td>Filter by Variable</td>
+                    <td>NA</td>
+                    <td>NA</td>
+                </tr>
+                <tr>
+                    <td>BASE_URL/items/bill?filter[id]=2&single=1</td>
+                    <td>Access Single Element</td>
+                    <td>NA</td>
+                    <td>NA</td>
+                </tr>
+                <tr>
+                    <td>BASE_URL/items/profile?filter[id]=20&fields=*.*&single=1</td>
+                    <td>Split single Linked Data</td>
+                    <td>NA</td>
+                    <td>NA</td>
                 </tr>
 
             </tbody>
