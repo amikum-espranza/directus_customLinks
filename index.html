@@ -21,7 +21,8 @@
     <div class="container-fluid d-flex">
       <div class="card">
         <div class="card-body">
-          id:user@espranza.in <br />
+          id:user@espranza.in
+          <br />
           password:12345678
         </div>
       </div>
@@ -36,7 +37,7 @@
           <a
             href="https://v8.docs.directus.io/api/query/filter.html"
             target="_blank"
-            >Documentation Filter</a
+            >Documentation of directus 8</a
           >
         </div>
       </div>
@@ -157,18 +158,22 @@
               >
             </td>
           </tr>
-
+          <!-- End Here -->
           <tr>
             <td>BASE_URL/items/user_profile</td>
             <td>set user profile [POST]</td>
             <td>{ "user":3 }</td>
+            <td>NA</td>
+          </tr>
+          <tr>
+            <td></td>
             <td colspan="3">
               <span class="text-danger">
-                pass the user id, you get on user signup</span
+                Pass user id to set user in profile table when creating new
+                user</span
               >
             </td>
           </tr>
-
           <tr>
             <td>BASE_URL/items/user_profile?filter[user.id]={id}</td>
             <td>set user profile [patch]</td>
