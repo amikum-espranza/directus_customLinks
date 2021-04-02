@@ -178,21 +178,32 @@
             <td>BASE_URL/items/user_profile?filter[user.id]={id}</td>
             <td>set user profile [patch]</td>
             <td>
-              { "dob": "2021-03-13", "gender": 1, "marital_status": 1,
-              "employment": 2, "no_of_children": 3, "salary": 12000,
-              "dependent": 2, "partner_name": "mrnsnfksd", "partner_dob":
-              "2021-03-05", "policy_status": true, "google_auth": "38742934792",
-              "user": 2, "form_filled": false, "email_verified": false,
-              "screen_lock_pin": null, "lang": null }
+              { "dob": "2021-03-13", "gender": 'Male', "marital_status":
+              'Single', "employment": 'Professional', "no_of_children": 3,
+              "salary": 12000, "dependent": 2, "partner_name": "mrnsnfksd",
+              "partner_dob": "2021-03-05", "policy_status": "Accepted",
+              "google_auth": "38742934792", "user": 2, "form_filled": 'false',
+              "email_verified": false, "screen_lock_pin": null, "language": null
+              }
             </td>
-            <td colspan="3">
+            <td>
               <span class="text-danger">
                 setting up user details base on user id</span
               >
             </td>
           </tr>
-
-          <!-- Till here -->
+          <tr>
+            <td></td>
+            <td colspan="3">
+              <span class="text-danger">
+                gender: {Male,Female,Others}, marital_status: {Married,single},
+                employment:
+                {FullTime,PartTime,Professional,NonProfessional,Unemployeed,Others},
+                policy_status: {Accepted,AskMeLater}, form_filled: {True,False},
+                email_verified: {True,False}, language: {English,Hindi}
+              </span>
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
