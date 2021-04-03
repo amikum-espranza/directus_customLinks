@@ -175,29 +175,25 @@
             </td>
           </tr>
           <tr>
-            <td>BASE_URL/items/user_profile?filter[user.id]={user_id}&fields=id</td>
+            <td>
+              BASE_URL/items/user_profile?filter[user.id]={user_id}&fields=id
+            </td>
             <td>to update user profile first hit [GET] reuqest on this URL</td>
             <td>NA</td>
-            <td>
-              "data": [
-                  {
-                      "id": 7
-                  }
-              ],
-              "public": true
-          }</td>
+            <td>"data": [ { "id": 7 } ], "public": true }</td>
           </tr>
-
-
-
-         
-
-
-
           <tr>
-            <td>
-              BASE_URL/items/user_profile/{profile_id}
+            <td></td>
+            <td colspan="3">
+              <span class="text-danger">
+                After getting user_profile_id we have attach that id to our
+                patch request every time we want to update some values of any
+                user</span
+              >
             </td>
+          </tr>
+          <tr>
+            <td>BASE_URL/items/user_profile/{profile_id}</td>
 
             <td>set user profile [patch]</td>
             <td>
@@ -211,7 +207,8 @@
             </td>
             <td>
               <span class="text-danger">
-                setting up user details base on profile id</span>
+                setting up user details base on profile id</span
+              >
             </td>
           </tr>
           <tr>
@@ -229,47 +226,34 @@
 
           <tr>
             <td>BASE_URL/items/children</td>
-            <td> add new child [POST]</td>
-            <td>{
-              "first_name": "boy",
-              "last_name": "wer nowei",
-              "dob": "2021-04-01",
-              "gender": "Male",
-              "user": 24
-          }</td>
-          <td>NA</td>
+            <td>add new child [POST]</td>
+            <td>
+              { "first_name": "boy", "last_name": "wer nowei", "dob":
+              "2021-04-01", "gender": "Male", "user": 24 }
+            </td>
+            <td>NA</td>
           </tr>
 
           <tr>
             <td>Base_URL/items/bank_account</td>
             <td>Add new Bank Account [POST}</td>
-            <td>{
-              "bank_name": "snfsd",
-              "account_no": 2949238,
-              "reg_mob_no": 23947293,
-              "ifsc_code": "rkerhke",
-              "primary": false,
-              "user": 20
-  
-   }</td>
-   <td>NA</td>
+            <td>
+              { "bank_name": "snfsd", "account_no": 2949238, "reg_mob_no":
+              23947293, "ifsc_code": "rkerhke", "primary": false, "user": 20 }
+            </td>
+            <td>NA</td>
           </tr>
 
-     <tr>
-       <td>BASE_URL/items/goal</td>
-       <td>Add new bank account [POST]</td>
-       <td>{
-        "goal_name": "new goal",
-        "term_and_conditions": true,
-        "time_period": 5,
-        "user": 1,
-        "amount": 1200,
-        "goal_type": "Yearly"}</td>
-      <td>NA</td>
+          <tr>
+            <td>BASE_URL/items/goal</td>
+            <td>Add new bank account [POST]</td>
+            <td>
+              { "goal_name": "new goal", "term_and_conditions": true,
+              "time_period": 5, "user": 1, "amount": 1200, "goal_type":
+              "Yearly"}
+            </td>
+            <td>NA</td>
           </tr>
-
-
-
         </tbody>
       </table>
     </div>
