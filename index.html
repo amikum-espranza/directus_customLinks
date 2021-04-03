@@ -175,7 +175,27 @@
             </td>
           </tr>
           <tr>
+<<<<<<< Updated upstream
             <td>BASE_URL/items/user_profile?filter[user.id]={id}</td>
+=======
+            <td>BASE_URL/items/user_profile?filter[user.id]={user_id}&fields=id</td>
+            <td>to update user profile first hit [GET] reuqest on this URL</td>
+            <td>NA</td>
+            <td>
+              "data": [
+                  {
+                      "id": 7
+                  }
+              ],
+              "public": true
+          }</td>
+          </tr>
+
+          <tr>
+            <td>
+              BASE_URL/items/user_profile/{profile_id}
+            </td>
+>>>>>>> Stashed changes
             <td>set user profile [patch]</td>
             <td>
               { "dob": "2021-03-13", "gender": 'Male', "marital_status":
@@ -188,7 +208,7 @@
             </td>
             <td>
               <span class="text-danger">
-                setting up user details base on user id</span
+                setting up user details base on profile id</span
               >
             </td>
           </tr>
