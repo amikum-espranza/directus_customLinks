@@ -143,7 +143,9 @@
 
           <tr>
             <td>BASE_URL/users/${user_id}</td>
-            <td>set avatar for user [PATCH,GET]</td>
+            <td>set avatar for user [PATCH]
+              for getting pic use  BASE_URL/files/{file_id}
+            </td>
             <td>{ "avatar": "5" }</td>
             <td>NA</td>
           </tr>
@@ -247,6 +249,17 @@
           <tr>
             <td>BASE_URL/items/goal</td>
             <td>Add new bank account [POST]</td>
+            <td>
+              { "goal_name": "new goal", "term_and_conditions": true,
+              "time_period": 5, "user": 1, "amount": 1200, "goal_type":
+              "Yearly"}
+            </td>
+            <td>NA</td>
+          </tr>
+
+          <tr>
+            <td>BASE_URL/items/piggy_bank</td>
+            <td>Add new piggy bank</td>
             <td>
               { "goal_name": "new goal", "term_and_conditions": true,
               "time_period": 5, "user": 1, "amount": 1200, "goal_type":
